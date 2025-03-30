@@ -151,8 +151,31 @@ main {
     border-radius: 10px;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding: 50px 75px;
+    padding: 50px 175px;
+}
+
+.CTA-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.CTA-container button {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #3882f6;
+    color: white;
+    padding: 5px 25px;
+}
+
+.CTA-container button:hover {
+    background-color: white;
+    color: #3882f6;
+    font-weight: bold;
+
+    transition: 30ms;
 }
 
 footer {
