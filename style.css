@@ -40,13 +40,17 @@ ul {
 
     display: flex;
     gap: 15px;
-}.logo {
-    font-size: 24px;
-    color: #f9faf8;
 }
+
+.hero-secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
 
 ul a {
     text-decoration: none;
+    color: #e5e7eb;
 }
 
 /* Bottom section of the hero */
@@ -54,11 +58,8 @@ ul a {
 .bottom {
     display: flex;
     justify-content: space-between;
-}
 
-.hero-secondary {
-    font-size: 18px;
-    color: #e5e7eb;
+    gap: 20px;
 }
 
 .hero-main {
@@ -67,7 +68,7 @@ ul a {
     color: #f9faf8;
 }
 
-/* Main section */
+/* Main section -------------------------------------*/
 
 main {
     flex: 1;
@@ -83,7 +84,9 @@ main {
     flex-direction: column;
     align-items: center;
 
-    padding: 16px 200px;
+    gap: 45px;
+
+    padding: 150px 200px;
 }
 
 .info-title {
@@ -99,25 +102,28 @@ main {
 
 .subcontainer {
     border: 5px solid #3882f6;
-    border-radius: 5px;
+    border-radius: 10px;
+
+    height: 200px;
 }
 
-/* Quote section */
+/* Quote section -- Good */
 
 .quote {
     background-color: #e5e7eb;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 24px;
+
+    padding: 150px 200px;
 }
 
 .quote-text {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
-
-    padding: 16px 200px;
 }
 
 .quote-author {
@@ -125,6 +131,28 @@ main {
     color: #1F2937;
     font-size: 24px;
     font-weight: bold;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 150px 200px;
+}
+
+.CTA-container {
+    flex: 1;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+
+    padding: 50px 75px;
 }
 
 footer {
