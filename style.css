@@ -59,13 +59,36 @@ ul a {
     display: flex;
     justify-content: space-between;
 
-    gap: 20px;
+    gap: 50px;
+}
+
+.text button {
+    border: none;
+    border-radius: 5px;
+    background-color: #3882f6;
+    color: white;
+    padding: 5px 25px;
 }
 
 .hero-main {
+    flex: 1;
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
+}
+
+.text {
+    padding-bottom: 50px;
+}
+
+.text > *{
+    margin-bottom: 30px;
+}
+
+.image {
+    flex: 1 0 400px;
+    max-width: 600px;
+    background-color: lightgray;
 }
 
 /* Main section -------------------------------------*/
@@ -85,7 +108,6 @@ main {
     align-items: center;
 
     gap: 45px;
-
     padding: 150px 200px;
 }
 
@@ -97,16 +119,32 @@ main {
 
 .info {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .subcontainer {
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 1;
+    max-width: 250px;
+
+    gap: 20px;
+}
+
+.subimage {
     border: 5px solid #3882f6;
     border-radius: 10px;
 
     height: 200px;
 }
 
+.subtext {
+    font-size: 18px;
+    text-align: center;
+    color: #1F2937;
+}
 /* Quote section -- Good */
 
 .quote {
@@ -177,6 +215,8 @@ main {
 
     transition: 30ms;
 }
+
+/* footer */
 
 footer {
     background-color: #1F2937;
