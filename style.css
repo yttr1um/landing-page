@@ -6,6 +6,14 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
 .hero {
     background-color: #1F2937;
     
@@ -59,6 +67,73 @@ ul a {
     color: #f9faf8;
 }
 
+/* Main section */
+
+main {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Info section */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 16px 200px;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.subcontainer {
+    border: 5px solid #3882f6;
+    border-radius: 5px;
+}
+
+/* Quote section */
+
+.quote {
+    background-color: #e5e7eb;
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+
+    padding: 16px 200px;
+}
+
+.quote-author {
+    align-self: flex-end;
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 footer {
     background-color: #1F2937;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 200px;
 }
